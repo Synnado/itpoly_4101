@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Synnado/itpoly_4101.git/static/css/main.1516dab7.css",
+    "main.js": "/Synnado/itpoly_4101.git/static/js/main.0b49b398.js",
+    "index.html": "/Synnado/itpoly_4101.git/index.html",
+    "main.1516dab7.css.map": "/Synnado/itpoly_4101.git/static/css/main.1516dab7.css.map",
+    "main.0b49b398.js.map": "/Synnado/itpoly_4101.git/static/js/main.0b49b398.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1516dab7.css",
+    "static/js/main.0b49b398.js"
+  ]
+}
