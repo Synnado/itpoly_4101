@@ -1,0 +1,54 @@
+/* Footer.css */
+
+footer {
+    background-color: #2c3e50; /* Dark blue-gray background for a modern feel */
+    color: #ecf0f1; /* Light text color for contrast */
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    border-top: 5px solid #3498db; /* Blue accent line at the top */
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300; /* Lighter weight for a sleek, clean look */
+  }
+  
+  footer a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ecf0f1; /* Change link color on hover for better interactivity */
+    text-decoration: underline;
+  }
+  
+  footer .social-icons {
+    margin-top: 20px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #ecf0f1;
+    transition: transform 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+  }
+  
+  @media (max-width: 768px) {
+    footer p {
+      font-size: 14px;
+    }
+  
+    footer .social-icons a {
+      font-size: 18px;
+    }
+  }
+  
