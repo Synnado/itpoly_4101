@@ -1,50 +1,80 @@
-/* Navbar.css */
-
-/* Basic styling for the navbar */
+/* Navbar container */
 nav {
-    background-color: #2c3e50; /* Dark blue-gray background */
-    padding: 15px 20px; /* Padding around the navbar */
-  }
-  
+  background: #ffffff; /* White background */
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+nav:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Navbar list styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar list items */
+li {
+  margin: 0 25px;
+}
+
+/* Navbar links */
+a {
+  color: #d4af37; /* Gold text color */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for links */
+a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #d4af37; /* Gold underline */
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #333333; /* Black text on hover */
+  transform: scale(1.1); /* Slight enlargement */
+}
+
+a:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
   ul {
-    list-style-type: none; /* Remove default list styles */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center the nav items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
   }
-  
+
   li {
-    margin: 0 15px; /* Space between items */
+    margin: 10px 0;
   }
-  
+
   a {
-    color: #ecf0f1; /* Light text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px; /* Text size */
-    font-weight: bold; /* Bold text */
-    text-transform: uppercase; /* Uppercase text */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    font-size: 16px; /* Slightly smaller text size for mobile */
   }
-  
-  a:hover {
-    color: #3498db; /* Light blue color on hover */
-    transform: scale(1.1); /* Slightly enlarge the text */
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    ul {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center align the items */
-    }
-  
-    li {
-      margin: 10px 0; /* Space between items when stacked */
-    }
-  
-    a {
-      font-size: 16px; /* Slightly smaller text on mobile */
-    }
-  }
-  
+}

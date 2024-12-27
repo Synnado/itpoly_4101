@@ -6,10 +6,10 @@ function Navbar() {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/courses">Courses</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+        <li><Link to="/">หน้าแรก</Link></li>
+        <li><Link to="/about">เกี่ยวกับเรา</Link></li>
+        <li><Link to="/courses">หลักสูตร</Link></li>
+        <li><Link to="/contact">ติดต่อเรา</Link></li>
       </ul>
     </nav>
   );
