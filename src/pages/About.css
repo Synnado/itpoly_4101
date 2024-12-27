@@ -1,53 +1,58 @@
-/* About.css */
-
 .about-container {
-    max-width: 1200px; /* Limit the width for better readability */
-    margin: 0 auto; /* Center align the container */
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  h2 {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    color: #2980b9; /* Bright blue for a professional touch */
-    margin-bottom: 20px;
-    text-transform: uppercase; /* Make the heading bold and all caps */
-  }
-  
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #34495e; /* Dark gray text for easy readability */
-    margin-bottom: 20px;
-    text-align: justify; /* Justify text for neat alignment */
-  }
-  
-  .about-container p:last-of-type {
-    margin-bottom: 0; /* Remove bottom margin for the last paragraph */
-  }
-  
-  .about-container::before {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 4px;
-    background-color: #3498db; /* Blue accent line */
-    margin: 0 auto 40px;
-  }
-  
-  @media (max-width: 768px) {
-    .about-container {
-      padding: 20px; /* Adjust padding for smaller screens */
-    }
-  
-    h2 {
-      font-size: 28px; /* Reduce the font size on smaller screens */
-    }
-  
-    p {
-      font-size: 16px; /* Slightly smaller text for mobile */
-    }
-  }
-  
+  font-family: 'Arial', sans-serif;
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-container strong {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.about-container p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Add a subtle divider between sections */
+.about-container p + p {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+/* Add hover effect to the container for interactivity */
+.about-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Background for the page */
+body {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+

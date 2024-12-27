@@ -1,106 +1,123 @@
-/* Home.css */
-
+/* Container Styles */
 .home-container {
-  background: linear-gradient(135deg, #000000, #1a1a1a); /* Gradient black background */
-  color: #d4af37; /* Default text color to gold */
-  font-family: 'Prompt', sans-serif; /* Modern and elegant font */
-  padding: 40px 20px;
-  border-radius: 10px; /* Rounded corners for a smooth design */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Depth shadow */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
+  color: #333;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2, h1, h3, p {
-  color: #d4af37; /* Gold text color for all text elements */
-}
-
-h2 {
-  font-size: 28px;
+/* Headings */
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #c0392b;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Shadow for dimension */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-shadow: 3px 3px 10px rgba(212, 175, 55, 0.7); /* Gold glow effect */
+.home-container h2 {
+  font-size: 1.8rem;
+  color: #8e44ad;
+  margin-bottom: 15px;
 }
 
-p {
-  font-size: 18px;
+.home-container h3 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.home-container p {
+  font-size: 1.1rem;
   line-height: 1.6;
+  color: #555;
   margin-bottom: 20px;
 }
 
-.philosophy-section, .activities-section, .enrollment-section {
-  margin: 40px 0;
+/* Philosophy Section */
+.philosophy-section {
+  background: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-section p {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Activities Section */
+.activities-section {
+  margin-bottom: 30px;
 }
 
 .activity-images {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .activity-images img {
-  width: 150px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   object-fit: cover;
-  border: 3px solid #d4af37; /* Gold border */
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .activity-images img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.7); /* Glow effect */
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Enrollment Section */
+.enrollment-section {
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.enrollment-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.enrollment-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .enroll-button {
-  background: #d4af37; /* Gold background */
-  color: #000000; /* Black text */
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 20px;
+  background: #e74c3c;
+  color: #fff;
   border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .enroll-button:hover {
-  background: #ffffff; /* White background on hover */
-  color: #d4af37; /* Gold text */
-  transform: scale(1.1); /* Slight zoom */
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.7); /* Gold glow */
+  background: #c0392b;
+  transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .activity-images {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .activity-images img {
-    width: 80%;
-    height: auto;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2, h3 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  .enroll-button {
-    font-size: 16px;
-  }
+/* General Body Styling */
+body {
+  background: #f4f4f4;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
